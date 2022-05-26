@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header h1 {
+
+  text-shadow: rgb(123, 255, 0) 1px -1px 2px, rgb(123, 255, 0) -1px 1px 2px, rgb(123, 255, 0) 1px 1px 2px, rgb(123, 255, 0) -1px -1px 2px
+}
+
+.main {
+  background-color: rgb(0, 21, 24);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  background-color: rgb(0, 155, 59);
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(232, 252, 255);
+  margin-top: 50px;
+}
+
+.imgCard {
+  width: 250px;
+  height: 280px;
+  border-radius: 20px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+
+}
+
+h2 {
+  font-size: 30px;
+  margin: 10px 0px 20px 0px;
+}
+
+h3 {
+  font-size: 20px;
+
+}
+
+.informaçoes {
+  padding-left: 10px;
+
+
+
+}
+
+.nome {
+  display: flex;
+  justify-content: center;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+p {
+  margin-bottom: 25px;
+}
