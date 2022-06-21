@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
 
-  <title>Document</title>
-</head>
+  <body>
+    <header class="header">
+      <h1>The Rick and Morty API</h1>
+      <label for=""></label>
+      <input type="text" name="" id="" />
+    </header>
 
-<body>
-  <header class="header">
-    <h1>The Rick and Morty API</h1>
-    <label for=""></label>
-    <input type="text" name="" id="">
-  </header>
-
-  <main class="main">
-    <section>
-      <ul id="listaPersonagens">
-        <li class="card">
-          <figure>
-            <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/76.jpeg" alt="">
-          </figure>
-          <div class="informaçoes">
-            <div>
-              <h2>Cousin Nicky</h2>
-            </div>
-            <h3>Dead - Alien</h3>
-            <div class="info2">
-              <h3>Last known location: </h3>
-              <p>Earth (Replacement Dimension)</p>
-              <h3>First seen in: </h3>
-              <p>Total Rickall</p>
-            </div>
-          </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
-
+    <main class="main">
+      <section>
+        <div class="paginaçaoContainer">
+          <button onclick="getPaginaAnterior()">
+            <img class="seta esquerda" src="assets/arrow.svg" alt="anterior" />
+          </button>
+          <span id="numeroDaPagina">1</span>
+          <button onclick="getProximaPagina()">
+            <img class="seta" src="assets/arrow.svg" alt="próxima" />
+          </button>
+        </div>
+        <ul id="listaPersonagens" class="listaPersonagens"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
